@@ -1,0 +1,53 @@
+POST localhost:8080/reg
+Content-Type: application/json
+
+{
+"login": "vitya123",
+"password": "1234",
+"name": "vitya"
+}
+
+###
+
+POST localhost:8080/reg
+Content-Type: application/json
+
+{
+  "login": "masha123",
+  "password": "1234",
+  "name": "masha"
+}
+
+###
+
+POST localhost:8080/auth
+Content-Type: application/json
+
+{
+  "login": "masha123",
+  "password": "1234"
+}
+
+###
+POST localhost:8080/calc
+Content-Type: application/json
+X-Token: 44dd629b-5128-4fc4-9234-a292a5a1f814
+
+{
+  "firstNum": 11,
+  "secondNum": 2132317,
+  "operation": "mul"
+}
+
+###
+GET localhost:8080/history
+Content-Type: application/json
+X-Token: 44dd629b-5128-4fc4-9234-a292a5a1f814
+
+###
+
+GET localhost:8080/exit
+X-Token: e267fede-9c2c-4a4e-81f6-ff18edd4fa9c
+
+###
+
